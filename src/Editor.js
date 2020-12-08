@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Previewer from './Previewer';
 import marked from 'marked';
 
 
@@ -9,7 +8,7 @@ export default class Editor extends Component {
     constructor(props){
         super(props)
         this.state = {
-          markdown: "",
+          markdown: "## A header"
         };
       }
 
@@ -20,20 +19,23 @@ export default class Editor extends Component {
       }
     render() {
         return (
-            <div className="edit">
-                <textarea 
-                id="editor" 
-                value={this.state.markdown}
-                onChange={this.handleUpdate}>
+            <div className="big-container">
+                <div id="container">
+                    <p className="subheading">Editor</p>
+                    <textarea 
+                    id="editor" 
+                    value={this.state.markdown}
+                    onChange={this.handleUpdate}>
                     
-                </textarea>
-                {console.log(this.state.markdown)}
-                <h1 className="check">hey</h1>
-                <div id="previewer" dangerouslySetInnerHTML={{
-                  __html: marked(this.state.markdown),
-                }}
-              >
-
+                    </textarea>
+                </div>
+                <div id="">
+                    <p className="subheading">
+                        Previewer</p>
+                    <div  dangerouslySetInnerHTML={{
+                    __html: marked(this.state.markdown),
+                    }} id="preview">
+                </div>
                 </div>
             </div>
         )
