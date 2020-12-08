@@ -1,69 +1,17 @@
-.body{
-  box-sizing: border-box;
-  margin: auto;
-  background-color: rgb(233, 124, 124);;
+.edit{
+      width: "400px";
+      height: "50vh";
+      margin-left: "auto";
+      margin-right: "auto";
+      padding:"10px";
 }
 
-.container{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(233, 124, 124);;
+.check{
+  color: red;
 }
 
-#quote-box{
-  text-align: center;
-  width: 450px;
-  padding: 2rem 3rem;
-  background-color: white;
-  display: inline-block;
-  margin-top: 5rem;
-  /* color: red; */
-  border-radius: 5px;
-}
-
-#author{
-  text-align: right;
-  font-size: 1.1em;
-  font-weight: 300;
-  padding: 1rem 0;
-  color: rgb(233, 124, 124);;
-}
-
-#text{
-  font-size: 1.8rem;
-  color: rgb(233, 124, 124);;
-}
-
-#links{
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
-}
-
-#media-links{
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-}
-
-#tweet-quote{
-  border-radius: 2px;
-  background-color: rgb(233, 124, 124);;
-  padding: 0.6rem;
-  margin-left: 0.3rem;
-  text-decoration: none;
-  color: white;
-}
-
-#new-quote{
-  border-radius: 2px;
-  background-color: rgb(233, 124, 124);;
-  padding: 0.7rem 1rem;
-  border: none;
-  cursor: pointer;
-  color: white;
-  font-weight: 300;
-
+#previewer{
+  height: 300px;
+  width: 300px;
+  background-color: aliceblue;
 }
